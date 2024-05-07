@@ -4,7 +4,8 @@ import renderHtml from "./renderer";
 
 const app = express();
 
-app.use("/public", express.static("dist/public"));
+// 後述のクライアントサイドのJSや画像などが入る
+app.use("/client", express.static("dist/client"));
 
 Object.keys(routes).forEach((key) => {
   const route = routes[key] as PageProps;

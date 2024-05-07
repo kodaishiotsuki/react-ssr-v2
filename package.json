@@ -4,9 +4,9 @@
   "description": "",
   "main": "src/server/index.ts",
   "scripts": {
-    "dev": "webpack --config webpack.config.js --watch & nodemon ./dist/server.js",
+    "dev": "webpack --config webpack.config.js --watch & nodemon ./dist/server/server.js",
     "build": "webpack --config webpack.config.js",
-    "start": "nodemon ./dist/server.js",
+    "start": "nodemon ./dist/server/server.js",
     "generate": "npm run build && node ./dist/ssg.js"
   },
   "keywords": [],

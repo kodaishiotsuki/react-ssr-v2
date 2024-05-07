@@ -26,7 +26,7 @@ const createHtml = async ({ url, pageData }: Props) => {
       <div id="root" data-react='${JSON.stringify(
         pageData
       )}'>${pageElemHtml}</div>
-      <script src="/public/client.js"></script>
+      <script src="/client/client.js"></script>
     </body>
   </html>`;
 };

@@ -1,5 +1,6 @@
 import { IndexPage } from "client/pages";
 import DetailPage from "client/pages/detail";
+import { HomePage } from "client/pages/home";
 import { Request } from "express";
 import { FC } from "react";
 
@@ -14,6 +15,12 @@ export type PageProps = {
 
 // Point①
 const routes: { [key: string]: PageProps } = {
+  "/": {
+    path: "/",
+    buildPath: () => "/",
+    component: HomePage,
+    getServerSideProps: (req: Request) => {},
+  },
   "/todos": {
     path: "/todos",
     buildPath: () => "/todos",

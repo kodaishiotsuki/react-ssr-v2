@@ -14,7 +14,7 @@ const DetailPage: FC<DetailPageProps> = ({ data, isLoading }) => {
     <div>
       <h1>Detail page</h1>
       <p>
-        <Link to={routes["/todos"].buildPath()}>Top</Link>
+        <Link to={routes["/todos"].buildPath()}>Todos</Link>
       </p>
       <ToDoCard item={data} />
     </div>
