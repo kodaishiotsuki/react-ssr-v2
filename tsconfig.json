@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"], // コンパイル時に利用可能なライブラリの種類を指定
+    "allowJs": false, // JavaScriptファイルのコンパイルを許可しない
+    "skipLibCheck": true, // 宣言ファイル（.d.ts）の型チェックをスキップ
+    "strict": false, // すべての厳格型チェックオプションを有効にしない
+    "strictNullChecks": false, // nullチェックの厳格化を無効にする
+    "forceConsistentCasingInFileNames": true, // ファイル名の大文字小文字を一貫性を保って強制
+    // "noEmit": true, // コンパイル結果を出力しない（コメントアウトされているため無効）
+    "esModuleInterop": true, // CommonJSモジュールとESモジュール間の互換性を持たせる
+    "module": "ES2015", // モジュールの種類をES2015形式で出力
+    "target": "es5", // コンパイル後のJavaScriptのECMAScriptバージョン（ES5）
+    "moduleResolution": "node", // モジュール解決策としてNode.jsの方式を採用
+    "resolveJsonModule": true, // JSONモジュールのインポートを許可
+    "isolatedModules": true, // すべてのファイルを個別のモジュールとしてトランスパイル
+    "jsx": "react", // JSXのコードをReact形式でトランスパイル
+    "incremental": true, // インクリメンタルコンパイルを有効にする
+    "baseUrl": "src", // モジュール解決のベースURLをsrcディレクトリに設定
+    "outDir": "./dist" // トランスパイル結果の出力ディレクトリ
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"], // コンパイル対象のファイル
+  "exclude": ["node_modules"] // コンパイル対象から除外するディレクトリ
+}
